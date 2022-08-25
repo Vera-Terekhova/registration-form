@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Module_two_JavaScript</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+
+   <body>
+      <div class="wrpper">
+         <form class="form form-auth">
+            <span class="to-form-reg" id="to-form-reg"><a href="./form-registration/registration.html">Зарегистрироваться</a></span> 
+            <h2 class="form-title">Вход</h2>
+            <div class="form-wrap">
+               <div class="form__item">
+                  <p id="email-item-title" class="form__item-title">Email</p>
+                  <div class="email-input">
+                     <span class="flag" id="email-error-flag">*</span>
+                     <input id="email-auth" class="form__item-input" type="text" placeholder="Введите email"> 
+                  </div>
+                  <span class="error" id="email-empty-auth">Поле обязательно для заполнения</span>
+               </div>
+
+               <div class="form__item">
+                  <p id="passw-item-title" class="form__item-title">Пароль</p>
+                  <div class="password-input">
+                     <span class="flag" id="password-error-flag">*</span>
+                     <input id="password-auth" class="form__item-input" type="password" placeholder="Введите пароль"> 
+                  </div>
+                  <span class="error" id="password-empty-auth">Поле обязательно для заполнения</span>
+                  <span class="error" id="invalid-email-password">Логин или Пароль невереный</span>
+               </div>
+
+               <div class="form__item">
+                  <div class="checked">
+                     <span class="flag" id="checked-error-flag">*</span>
+                     <input type="checkbox" id="check-auth" class="form-check">
+                     <label for="check-auth" class="l-check" id="error-check-auth">Я согласен получать обновления на почту</label>
+                  </div>
+                  <span class="error" id="check-empty-auth">Поле обязательно для заполнения</span>  
+               </div>
+
+               <div class="form__btn">
+                  <button id="btn-input" class="form-submit">Вход</button>
+               </div>
+            </div>
+         </form>
+      </div>
+      
+      <script type="module" src="./scripts/stateService.js"></script> 
+      <script type="module" src="./scripts/authorization.js"></script>
+   </body>
+</html>

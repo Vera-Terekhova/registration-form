@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Module_two_JavaScript</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+   </head>
+
+   <body>
+      <div class="wrpper">
+         <form id="registration" class="form form-registretion">
+            <span class="to-form-auth" id="to-form-auth"><a href="../index.html">Авторизоваться</a></span>
+            <h2 class="form-title">Регистрация</h2>
+            <div class="form-wrap">
+               <div class="form__item">
+                  <p id="email-item-title" class="form__item-title">Email</p>
+                  <div class="email-input">
+                     <span class="flag" id="email-error-flag">*</span>
+                     <input id="email-reg" class="form__item-input" type="text" placeholder="Введите email">
+                  </div>
+                  <span class="error" id="email-empty">Поле обязательно для заполнения</span> 
+                  <span class="error" id="email-valid">Email невалидный</span> 
+               </div>
+
+               <div class="form__item">
+                  <p id="passw-item-title" class="form__item-title">Пароль</p>
+                  <div class="password-input">
+                     <span class="flag" id="password-error-flag">*</span>
+                     <input id="password-reg" class="form__item-input" type="password" placeholder="Введите пароль">
+                  </div>
+                  <span class="error" id="password-empty">Поле обязательно для заполнения</span>
+                  <span class="error" id="password_langth">Пароль должен содержать как минимум 8 символов</span> 
+               </div>
+
+               <div class="form__item">
+                  <div class="checked">
+                     <span class="flag" id="checked-error-flag">*</span>
+                     <input type="checkbox" id="check-reg" class="form-check">
+                     <label for="check-reg" id="error-check-reg">Я согласен с Правилами пользования приложением</label>
+                  </div> 
+                  <span class="error" id="check-empty">Поле обязательно для заполнения</span>
+               </div>
+
+               <div class="form__btn">
+                  <button id="btn-reg" class="form-submit">Регистрация</button>
+               </div>
+            </div>
+         </form>
+      </div>
+
+      <script type="module" src="../scripts/stateService.js"></script>
+      <script type="module" src="../scripts/registration.js"></script> 
+   </body>
+</html>
